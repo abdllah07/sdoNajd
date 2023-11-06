@@ -60,7 +60,6 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    width: 390px;
 }
 .what-us .vis-btn .vision div i{
     margin-right: 10px;
@@ -148,9 +147,7 @@
 
 }
 
-.fixed-size-left {
-    width: 800px; 
-}
+
 
 .what-us .vision-left{
     display: flex;
