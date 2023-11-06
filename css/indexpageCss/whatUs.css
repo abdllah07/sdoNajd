@@ -1,0 +1,245 @@
+#about-02{
+    margin-top: 80px;
+}
+
+#what-us{
+    padding: 0;
+}
+
+.what-us  button {
+    background-color: white;
+}
+
+.what-us{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.what-us .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.what-us .vis-btn{ 
+    background-color:var(--back-gray);
+    margin-bottom: 20px;
+    border: 1px solid rgba(27,38,49,.04);
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+    padding: 0;
+    width: 397px;
+
+}
+.vis-btn::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 15%;
+    height: 95%;
+    opacity: 1;
+    background-image: url("../../img/arch/vision-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.what-us .vis-btn .vision{
+    transition: all 0.5s ease;
+    text-align: end;
+    height:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 390px;
+}
+.what-us .vis-btn .vision div i{
+    margin-right: 10px;
+    background-color:     #dddbda;
+    padding: 10px;
+    border-radius: 50px;
+    color:var(--bron-color);
+}
+
+.what-us .vis-btn .vision:hover div i{
+    background-color: #28333d;
+    transition: all 0.5s ease-in;
+}
+.what-us .vision::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--home-color);
+    left: 50%;
+    top: 50%;
+    z-index: -999;
+    transform: translate(-50%, -50%);
+}
+
+.what-us .vision:hover::after{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+
+.what-us .vision-left,
+.what-us .vision i , 
+.what-us .vision h2 , 
+.what-us .vision p , 
+.what-us .vision p{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.what-us .vision h2 {
+    color: var(--home-color);
+    font-size: 26px;
+
+}
+
+.what-us .vision p {
+    width: 250px;
+    margin-left: 0;
+}
+
+.what-us .vision h2{
+    font-weight: bolder;
+}
+.what-us .vision i {
+    font-size: 25px;
+    color: var(--home-color);
+}
+
+
+
+/* left about 2  */
+
+
+
+.what-us .left{
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+
+}
+.what-us .left::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url("../../img/arch/what.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+
+}
+
+.fixed-size-left {
+    width: 800px; 
+}
+
+.what-us .vision-left{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: end;
+    background-color: var(--back-gray);
+    /* box-shadow: var(--bron-color) 0px 20px 20px -20px; */
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+    padding: 10px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+    text-align: end;
+    position: relative;
+    margin-right: 80px;
+    width: 90%;
+    border-left: 0px solid gold;
+    border-right: 0px solid gold;}
+
+.what-us .vision-left:hover{
+    transition: all 0.2s ease-in;
+    box-shadow: 0.1em 0.1em 0em var(--bron-color) ;
+
+}
+
+.what-us .vision-left::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: var(--home-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.01;
+    transition: all 0.5s ease;
+
+}
+.what-us .vision-left:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.what-us .vision-left::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 15%;
+    height: 95%;
+    opacity: 1;
+    background-image: url("../../img/arch/vision-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.what-us .vision-left p , 
+.what-us .vision-left h2,
+.what-us .vision-left p{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.what-us .vision-left p {
+    font-size:14px;
+    width: 90%;
+}
+
+
+#image-what{
+    position: relative;
+    height: 40vh;   
+}
+
+#image-what::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 100%;
+    height: 95%;
+    opacity: 0.3;
+    background-image: url("../../img/arch/car-black.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}

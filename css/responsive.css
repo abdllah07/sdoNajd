@@ -228,7 +228,7 @@
     /* About 01 */
     /* Large Content Box */
     .content-box-lg {
-        padding: 90px 0;
+        padding: 50px 0;
     }
     /* Vertical heading */
     .vertical-heading {
@@ -455,5 +455,144 @@
     }
     .testimonial .stars {
         font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 1420px){
+
+}
+@media (max-width: 1040px){
+
+    .what-us .left {
+        width: 70%;
+    }
+
+    .what-us .vision-left {
+            width: 90%;
+    }
+    .vertical-heading h5 {
+        left: 145px;
+    }
+    .vertical-heading h2 {
+        left: -30%;
+    }
+    .row .buttons {
+    margin-left: 220px;
+    }
+    .navbar-header {
+        left: 100px!important;
+    }
+}
+
+@media (max-width: 880px){
+    .what-us {
+        flex-direction: column;
+    }
+    .what-us .right {
+        flex-direction: row;
+    }
+    .what-us .left {
+        width: 90%;
+    }
+    .what-us .vis-btn {
+    }
+    .what-us .vis-btn p{
+        font-size: 13px;
+    }
+   
+}
+@media(max-width:769px){
+    #home-content-inner img{
+        width:150px
+        }
+        .vertical-heading h2 {
+            position: static;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+        
+        }
+    
+        .what-us .left::before{
+            left: -25px!important;
+        }
+
+        .row .who-img  {
+            margin-top: 50px;
+        text-align: center;
+        }
+        .square-brackets {
+            left:20px;
+        }
+        .square-brackets-left{
+            right: 20px;
+        }
+        .what-us .vis-btn {
+            width: 95%!important;
+        }
+        .what-us .right {
+            width: 100%;
+          
+        }
+        .what-us .vis-btn .vision {
+            width: 100%!important;
+         
+        }
+        .what-us .vision-left {
+            width: 90%;
+        
+        }
+
+        .row .who-img img {
+            margin-top: 20px;
+            margin-left:20px!important;
+        }
+}
+@media (max-width: 580px){
+    .what-us .vis-btn {
+        width: 98%;
+    }
+    .what-us .right {
+    margin-right: 20px;
+    }
+    .what-us .vision-left {
+        margin-left: 28px;
+        width: 85%;
+        }
+    .what-us .left{
+        width: 100%;
+        margin-left: 0;
+    }
+    .what-us .vision-left p {
+        margin: 0;
+    }
+    .row .buttons{
+        margin-left: 50px;
+    }
+
+    .navbar-header {
+        left: 0px!important;
+    }
+
+    .wrapper > p {
+        width: 300px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+    width: 1000px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+    width: 1370px;
     }
 }

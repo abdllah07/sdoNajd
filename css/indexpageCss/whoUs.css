@@ -1,0 +1,62 @@
+.wrapper {
+
+    text-align: end;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.wrapper > div {
+    margin-top: 20px;
+    color: var(--home-color);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Scheherazade New', serif;
+    grid-area: overlap;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 4px transparent;
+}
+.wrapper > img {
+    width: 30px;
+}
+.wrapper > p{
+    margin-top: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+   /* ************************ */
+.brack{
+    position: relative;
+}
+
+
+.row #about-right .text{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.row #about-right .text i {
+    margin-left: 20px;
+    color:var(--bron-color);
+}
+
+.row .buttons {
+    display: flex;
+    justify-content: end;
+}
+
+
+.row .who-img img  {
+    border: none;
+    height: 25vh;
+    margin-left: 90px;
+}
+
+
+/* about 2 */
+
+

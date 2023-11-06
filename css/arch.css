@@ -4,86 +4,191 @@
     --bron-color:rgba(168,134,111);
     --bron-white: rgba(237 , 209 ,188);
     --bron-light:rgba(209, 198,182);
+    --back-gray:#dddbda73;
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+    --bg-color: #D8D8D8;
 }
-@media(max-width:769px){
-    #home-content-inner img{
-        width:150px
-        }
-        .vertical-heading h2 {
-            position: static;
-        }
-        .row{
-            display: flex;
-            flex-direction: column-reverse;
-        
-        }
-    
-        .what-us .left::before{
-            left: -25px!important;
-        }
+
+
+
+.home-title {
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-#what-us{
-    padding: 0;
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    color: white;
 }
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    animation: a-ltr-after 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+
+
+
+
+.square-brackets {
+    display: inline-block;
+    width: 30px; /* Adjust the width as needed */
+    height: 120px; /* Adjust the height as needed */
+    position: absolute;
+    left:0px;
+    top:30px;
+
+}
+
+.square-brackets::before, .square-brackets::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bron-color); /* Border style and color */
+}
+
+.square-brackets::before {
+    top: 0;
+    left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 4px 0 0 0; /* Adjust the radius to make it more square */
+}
+
+.square-brackets::after {
+    top: 0;
+    right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0 4px 0 0;
+}
+
+.square-brackets-left {
+    display: inline-block;
+    width: 30px; /* Adjust the width as needed */
+    height: 120px; /* Adjust the height as needed */
+    position: absolute;
+    right:0px;
+    top:30px;
+}
+
+.square-brackets-left::before, .square-brackets-left::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bron-color); /* Border style and color */
+}
+
+.square-brackets-left::before {
+    top: 0;
+    left: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 4px 0 0 0;
+}
+
+.square-brackets-left::after {
+    top: 0;
+    right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0 4px 0 0;
+}
+/* ********************************************************** */
+/* .row .title{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title .header-title  {
+    display: inline-block;
+    font-size: 240px; 
+    border: 2px solid #000; 
+    padding: 5px; 
+    border-radius: 4px; 
+    margin: 10px; 
+
+}
+.title  .header-title p{
+    width: 10px;
+    font-weight:100!important;
+    font-size: 30px;
+    height: 100%;
+} */
+
+
+
 .navbar-header img {
     width: 50px;
 }
 
-
-
-.row #about-right .text{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+.header-title{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 20px;
 }
 
-.row #about-right .text i {
-    margin-left: 20px;
-    color:var(--bron-color);
-}
 
-.row .buttons {
-    display: flex;
-    width: 300px;
-    margin-left: 190px;
-}
 
-.main-title-link {
-    align-items: center;
-    text-align: center;
-    margin-right: 10px;
-    border: 2px solid var(--bron-color);
-    position: relative;
-    z-index: 1;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    border-radius: 50rem!important;
-    width: 170px;
-}
-.main-title-link:first-child:hover{
-    transition: all 0.3s ease;
-    background-color: var(--bron-color);
-}
-.main-title-link:first-child:hover a{
-    transition: all 0.3s ease;
-    color: white;
-    background-color: var(--bron-color);
-}
-.main-title-link:first-child a{
-    background-color: white;
-    color: var(--bron-color);
-}
-.main-title-link:last-child{
-    background-color: var(--bron-color);
-    color:var(--home-color);
-}
-.main-title-link:last-child:hover{
-    background-color: rgb(156, 113, 85);
-}
-.main-title-link:last-child a  {
-    color: var(--home-color);
-}
+
+
 
 
 
@@ -93,31 +198,7 @@
 /*  */
 
 
-.what-us  button {
-    background-color: white;
-}
 
-.what-us{
-    /* position: relative;
-    transition: all 0.5s ease;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    margin-top: 180px;
-    margin-bottom: 80px; */
-    background-color: transparent;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-.what-us .right{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-evenly;
-}
 
 .content {
     display: none;
@@ -125,10 +206,7 @@
 
 
 
-/* .vis-btn.active {
-background-color:var(--bron-white); 
-color:white;
-} */
+
 .vis-btn.active .vision h2 , 
 .vis-btn.active .vision p  {
     color: var(--bron-color);
@@ -161,243 +239,15 @@ color:white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 } 
-.what-us .vis-btn{ 
-    margin-bottom: 30px;
-    border: 1px solid rgba(27,38,49,.04);
-    border-radius: 50px;
-    position: relative;
-    z-index: 1;
-    transition: 1s;
-    /* background-image: url("../images/back-black.png");
-    background-position:  center left; 
-    background-repeat: no-repeat;  */
-    width: 397px;
-
-}
-.vis-btn:hover::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 15%;
-    height: 95%;
-    opacity: 1;
-    background-image: url("../img/arch/vision-btn.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.what-us .vis-btn .vision{
-    transition: all 0.5s ease;
-    text-align: end;
-    height: 10vh;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 350px;
-}
-.what-us .vis-btn .vision div i{
-    margin-right: 10px;
-    background-color: rgba(172, 166, 166, 0.288);
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.what-us .vis-btn .vision:hover div i{
-    background-color: white;
-    transition: all 0.5s ease-in;
-}
-.what-us .vision::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-radius: 50px;
-    background-color: var(--home-color);
-    left: 50%;
-    top: 50%;
-    z-index: -999;
-    transform: translate(-50%, -50%);
-}
-
-.what-us .vision:hover::after{
-    width: 400px;
-    height: 100px;
-    transition: all 0.5s ease;
-}
-
-
-.what-us .left{
-    display: flex;
-    position: relative;
-    flex-direction: column-reverse;
-    /* background-image: url("../images/back.png");
-    background-position:  center right; 
-    background-repeat: no-repeat;  */
-}
-.what-us .left::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: -100px;
-    top: -116px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    background-image: url("../img/arch/btn-back.png");
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
-
-}
-
-.what-us .vision-left{
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    align-items: end;
-    box-shadow: var(--bron-color) 0px 20px 20px -20px;
-    padding: 10px;
-    opacity: 0;
-    border-radius: 10px;
-    transition: all 0.5s ease-in;
-    text-align: end;
-    background-color: #fff;
-    position: relative;
-    margin-right: 80px;
-    width: 560px;
-}
 
 
 
-.what-us .vision-left,
-.what-us .vision i , 
-.what-us .vision h2 , 
-.what-us .vision p , 
-.what-us .vision p{
-    margin-bottom: 10px;
-    margin-left: 15px;
-}
-.what-us .vision h2 {
-    color: var(--home-color);
-    font-size: 26px;
-
-}
-.what-us .vision-left p , 
-.what-us .vision-left h2,
-.what-us .vision-left p{
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.what-us .vision i {
-    font-size: 25px;
-    color: var(--home-color);
-}
-.what-us .vision h2{
-    font-weight: bolder;
-}
-.what-us .vision p {
-    text-align:center;
-}
 
 
 
-.fixed-size-left {
-    width: 800px; 
-}
-
-@media (max-width: 1420px){
-
-}
-@media (max-width: 1040px){
-    .what-us .right {
-    margin-right: 70px;
-    }
-    .what-us .left {
-        width: 70%;
-    }
-
-    .what-us .vision-left {
-            width: 90%;
-    }
-    .vertical-heading h5 {
-        left: 145px;
-    }
-    .vertical-heading h2 {
-        left: -30%;
-    }
-    .row .buttons {
-    margin-left: 220px;
-    }
-}
-
-@media (max-width: 880px){
-    .what-us {
-        flex-direction: column;
-    }
-    .what-us .right {
-        flex-direction: row;
-    }
-    .what-us .left {
-        width: 90%;
-        margin-left: 50px;
-    }
-    .what-us .vis-btn {
-    }
-    .what-us .vis-btn p{
-        font-size: 13px;
-    }
-   
-}
-
-@media (max-width: 580px){
-    .what-us .vis-btn {
-        width: 98%;
-    }
-    .what-us .right {
-    margin-right: 20px;
-    }
-    .what-us .vision-left {
-        margin-left: 28px;
-        width: 85%;
-        }
-    .what-us .left{
-        width: 100%;
-        margin-left: 0;
-    }
-    .what-us .vision-left p {
-        margin: 0;
-    }
-    .row .buttons{
-        margin-left: 50px;
-    }
-    .what-us .vision:hover::after{
-        width: 350px;
-       
-    }
-}
 
 
-#image-what{
-    position: relative;
-    height: 40vh;
-}
 
-#image-what::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 100%;
-    height: 95%;
-    opacity: 0.3;
-    background-image: url("../img/arch/car-black.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
-  }
+
