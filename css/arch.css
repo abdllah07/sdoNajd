@@ -11,7 +11,11 @@
     --bg-color: #D8D8D8;
 }
 
+a {
+    font-family: 'Scheherazade New', serif;
+    font-size: 16px;
 
+}
 
 .home-title {
     display: flex;
@@ -80,12 +84,11 @@
 
 .square-brackets {
     display: inline-block;
-    width: 30px; /* Adjust the width as needed */
-    height: 120px; /* Adjust the height as needed */
+    width: 30px;
+    height: 163px;
     position: absolute;
-    left:0px;
-    top:30px;
-
+    left: 0px;
+    top: 0px;
 }
 
 .square-brackets::before, .square-brackets::after {
@@ -114,11 +117,11 @@
 
 .square-brackets-left {
     display: inline-block;
-    width: 30px; /* Adjust the width as needed */
-    height: 120px; /* Adjust the height as needed */
+    width: 30px;
+    height: 163px;
     position: absolute;
-    right:0px;
-    top:30px;
+    right: 0px;
+    top: 0px;
 }
 
 .square-brackets-left::before, .square-brackets-left::after {

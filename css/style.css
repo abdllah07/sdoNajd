@@ -1215,19 +1215,19 @@ ul.navbar-nav>li>a:focus {
 }
 
 .white-nav-top ul.navbar-nav>li>a {
-    color: var(--bron-light);
+    color: var(--bron-color);
 }
 
 .white-nav-top ul.navbar-nav>li>a:hover,
 .white-nav-top ul.navbar-nav>li>a:focus {
-    color: #f4c613;
+    color: white;
 }
 
 
 /* Scroll spy active state */
 
 .white-nav-top ul.navbar-nav>li.active>a {
-    color: #f4c613;
+    color: white;
     font-weight: 500;
 }
 

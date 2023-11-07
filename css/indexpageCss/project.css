@@ -1,0 +1,76 @@
+.projects {
+    padding-bottom: 70px;
+}
+.projects .title{
+    text-align: center;
+    width: 100%;
+}
+.projects .title .title-info{
+    width: 35%;
+    margin: auto;
+
+    grid-area: overlap;
+    -webkit-text-stroke: 4px transparent;
+    position: relative;
+
+}
+.projects .title .title-info img {
+    margin-top: 20px;
+    width: 30px;
+}
+.projects .title .title-info h2 {
+    color: var(--home-color);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.projects .title p {
+    text-align: center;
+    padding-top: 8px;
+}
+
+@media (max-width: 768px){
+    .projects .title .title-info{
+        width: 80%;
+    }
+}
+.projects .project-boxses a{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+overflow: hidden;
+}
+
+.projects .project-boxses a img {
+    max-width: 98%;
+    filter: blur(0.5px) brightness(0.5);
+    transition: all 0.7s ease;
+}
+.projects .project-boxses a img:hover{
+    transform: scale(1.4);
+}
+
+.owl-carousel .owl-stage-outer {
+    height: 30vh;
+}
+
+.projects .project-boxses a h2{
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color:var(--bron-color);
+    font-size: 30px;
+    width: 98%;
+    height: 92%;
+    transition: 0.3s;
+    bottom: -80%;
+    left: 40%;
+    opacity: 1;
+
+    
+}
+
+

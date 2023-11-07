@@ -156,7 +156,7 @@
     align-items: end;
     background-color: var(--back-gray);
     /* box-shadow: var(--bron-color) 0px 20px 20px -20px; */
-    box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+    box-shadow: 0.6em 0.6em 1.2em var(--bron-color), -0.5em -0.5em 1em #ffffff;
     padding: 10px;
     opacity: 0;
     border-radius: 10px;
@@ -165,8 +165,11 @@
     position: relative;
     margin-right: 80px;
     width: 90%;
-    border-left: 0px solid gold;
-    border-right: 0px solid gold;}
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 
 .what-us .vision-left:hover{
     transition: all 0.2s ease-in;
@@ -199,7 +202,7 @@
     top: 5px;
     width: 15%;
     height: 95%;
-    opacity: 1;
+    opacity: 0.7;
     background-image: url("../../img/arch/vision-btn.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -215,8 +218,8 @@
     padding-left: 40px;
 }
 .what-us .vision-left p {
-    font-size:14px;
-    width: 90%;
+    font-size:17px;
+    width: 95%;
 }
 
 

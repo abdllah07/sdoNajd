@@ -1,0 +1,181 @@
+
+.services {
+    padding-bottom: 70px;
+}
+.services .title{
+    text-align: center;
+    width: 100%;
+}
+.services .title .title-info{
+    width: 35%;
+    margin: auto;
+
+    grid-area: overlap;
+    -webkit-text-stroke: 4px transparent;
+    position: relative;
+
+}
+.services .title .title-info img {
+    margin-top: 20px;
+    width: 30px;
+}
+.services .title .title-info h2 {
+    color: var(--home-color);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.services .title p {
+    text-align: center;
+    padding-top: 8px;
+}
+
+@media (max-width: 768px){
+    .services .title .title-info{
+        width: 80%;
+    }
+}
+
+
+
+.services .services-boxses  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 380px;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.services .services-boxses a .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 380px;
+}
+.services .services-boxses a  .head  {
+    text-align: center;
+
+}
+.services .services-boxses  a .head h2{
+    text-align: center;
+    color: var(--home-color);
+    font-size: 20px;
+    margin: 0;
+    transition: all 0.5s ease;
+
+}
+.services .services-boxses a img {
+    text-align: center;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.services .services-boxses a p {
+    color:var(--bron-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+}
+.services .services-boxses  a:hover{
+    text-decoration: none;
+}
+.services .services-boxses  p  i {
+    margin-left: 10px;
+}
+
+.services .services-boxses a:hover {
+    background-color: var(--bron-color);
+    transform: translateY(-2px);
+}
+.services .services-boxses a:hover p ,
+.services .services-boxses a:hover h2 {
+    color: white;
+}
+
+
+.owl-carousel.owl-drag .owl-i {
+    width: 30px;
+}
+
+.owl-carousel.owl-drag .owl-item { 
+    width: 370px!important;
+    
+}
+
+.services .owl-carousel .owl-stage-outer {
+    height: 50vh;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color:var(--bron-color);
+    transition: all 0.5s easeS;
+}
+
+
+.serv-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.serv-btn a {
+    text-align:center;
+    font-size: 20px;
+    position: relative;
+    padding: 10px 50px ;
+    background-color: var(--bron-color);
+
+}
+.serv-btn a::after{
+    content:"";
+    position:absolute;
+    top: 50%;
+    left: -150px;
+    background-color: var(--bron-color);
+    width: 100px;
+    height:1px;
+}
+.serv-btn a::before{
+    content:"";
+    position:absolute;
+    top: 50%;
+    right: -150px;
+    background-color: var(--bron-color);
+    width: 100px;
+    height:1px;
+}
+.serv-btn a:hover{
+    text-decoration: none;
+}
+.serv-btn a ,
+.serv-btn a button {
+    border-radius: 50rem!important;
+    color:var(--home-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    border: 2px solid var(--bron-color);
+}
+.services .serv-btn a:hover {
+    background-color: rgb(163, 119, 89);
+}
+
+.serv-btn a button {
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+.serv-btn a button i {
+    font-size: 16px;
+    color:var(--home-color);
+    margin-left: 10px;
+}
+
+
+
