@@ -1,0 +1,116 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
+
+
+
+.project-detail{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.project-detail .head{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    
+}
+.project-detail .image {
+    width: 50%;
+}
+
+.project-detail .image img{
+    width: 500px;
+}
+
+.project-detail  .p-info{
+    width: 30%;
+    text-align: end;
+    margin-right: 70px;
+}
+
+.project-detail  .p-info h4{
+    color: var(--bron-white);
+    margin-bottom: 40px;
+}
+
+.project-detail  .p-info .stil{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+
+}
+.project-detail  .p-info .stil i {
+    margin-left: 20px;
+    font-size: 18px;
+    color:var(--bron-white);
+
+}
+
+.project-detail  .p-info .stil p {
+    font-size: 18px;
+    color:var(--home-color)
+}
+
+.project-detail  .p-info .subtitle{
+    margin-top: 40px;
+}
+
+.project-detail  .p-info .subtitle .one{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.project-detail  .p-info .subtitle .one i {
+    color:var(--bron-white);
+    font-size: 10px;
+    height: 5vh;
+}
+
+.project-detail  .p-info .subtitle .one p{
+    height: 4vh;
+    margin-right: 20px;
+    font-weight: 700;
+    color: var(--home-color);
+}
+.project-detail .photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-detail .photos img{
+    width: 60%;
+    margin: 30px;
+}
+@media (max-width:940px){
+    .project-detail .image {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .project-detail .image img{
+        width: 500px;
+    }
+    .project-detail  .p-info .stil{
+        flex-direction: row;
+    }
+
+    .project-detail  .p-info{
+        width: 70%;
+        text-align: end;
+        margin-right: 70px;
+    }
+}
+
+@media (max-width:767px){
+    .project-detail .image img{
+        width: 230px;
+    }
+}

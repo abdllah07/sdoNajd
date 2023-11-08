@@ -1,0 +1,99 @@
+
+.sec-name {
+    padding-top: 70px;
+    padding-bottom: 5px;
+    background-color: var(--home-color);
+}
+
+.sec-name h3 , 
+.sec-name h6 {
+    color: var(--bron-color);
+    text-align: end;
+    margin-top: 30px;
+    width: 78%;
+    font-size: 16px;
+}
+.sec-name h3 {
+    padding-bottom: 30px;
+}
+
+
+
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.services a{
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+
+.services .serv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    width: 350px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.services .serv .s-title{
+    text-align: center;
+}
+.services .serv  .s-title img {
+    text-align: center;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.services .serv .s-title h3{
+    color:var(--home-color);
+}
+
+
+.services .serv h5{
+    color:var(--bron-color);
+
+}
+
+.services .serv:hover {
+transform: translateY(-10px);
+background-color:var(--bron-color);
+}
+.services .serv:hover .s-title h3 {
+    color: white;
+}
+.services .serv:hover .s-title i {
+    background-color: white;
+}
+.services .serv:hover  h5 {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .services .serv {
+        width: 300px;
+    }
+    .services{
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }

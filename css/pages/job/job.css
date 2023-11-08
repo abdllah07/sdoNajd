@@ -1,0 +1,96 @@
+:root{
+    --home-color:rgb(3, 27 , 63);
+    --bron-color:rgba(168,134,111);
+    --bron-white: rgba(237 , 209 ,188)
+}
+
+
+            
+.user-form {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.user-form form .flex-box{
+    width: 82%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.user-form form {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.user-form form .name {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: end;
+}
+.user-form form .name label{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-form form .name input{
+    border: 1px solid rgba(168, 134, 111, 0.329);
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    text-align: right;
+
+}
+
+.user-form form .name input:focus{
+    outline: none;
+    box-shadow: rgba(168, 134, 111, 0.329) 0px 0px 0px 1px;
+}
+
+.user-form form h4{
+    text-align: end;
+    margin-top: 20px;
+}
+.user-form form textarea{
+    border: 1px solid rgba(168, 134, 111, 0.329);
+    text-align: right;
+
+}
+.user-form form textarea:focus{
+    outline: none;
+    box-shadow: rgba(168, 134, 111, 0.329) 0px 0px 0px 1px;
+
+    border: 1px solid rgba(168, 134, 111, 0.329);
+
+}
+
+.user-form form .upload-cv input{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 210px;
+}
+.user-form form .upload-cv input:hover{
+    border: none!important;
+    background-color: none!important;
+}
+
+
+
+@media (max-width: 900px){
+    .user-form form .name { 
+        width: 100%;
+    }
+    .user-form form .name input {
+        width: 100%;
+    }
+    .user-form form textarea {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
