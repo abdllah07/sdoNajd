@@ -185,3 +185,12 @@
 
 
 
+@media (max-width:768px){
+    .owl-carousel .owl-stage-outer{
+        height: 70vh;
+    }
+    .owl-carousel .owl-stage {
+        height: 70vh;
+
+    }
+}
