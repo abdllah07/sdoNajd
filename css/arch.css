@@ -4,6 +4,7 @@
     --bron-color:rgba(168,134,111);
     --bron-white: rgba(237 , 209 ,188);
     --bron-light:rgba(209, 198,182);
+    --back-btn:rgba(236, 224,211);
     --back-gray:#dddbda73;
     --gold: #ffb338;
     --light-shadow: #77571d;
@@ -220,13 +221,13 @@ margin-bottom: 20px;
     color: var(--bron-color);
 }
 .vis-btn.active .vision {
-    background-color: var(--home-color);
+    background-color: var(--bron-color);
     border-radius: 50px;
 }
 .vis-btn.active .vision div i ,
 .vis-btn.active .vision div h2,
 .vis-btn.active .vision div p {
-    color: var(--bron-color);
+    color: #fff;
 
 }
 .vis-btn.active::before{

@@ -45,7 +45,7 @@ align-items: center;
     max-width: 100%;
     filter: blur(0.5px) brightness(0.5);
     transition: all 0.7s ease;
-    width: 600px;
+    width: 500px;
 
 }
 
@@ -61,9 +61,9 @@ font-weight: bold;
 color: var(--bron-color);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-@media (max-width:1024px){
+@media (max-width:1200px){
     .projects .project-boxses .box img{
-        width: 430px;
+        width: 460px;
     }
 }
 

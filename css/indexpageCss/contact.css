@@ -25,7 +25,6 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 52vh;
 }
 .contact-boxses  .con-box::after{
     content: '';
@@ -92,10 +91,10 @@
 @media(max-width: 1330px){
 
     .contact-boxses .con-box {
-        width: 80%;
+        width: 52%;
         
     }
     .contact-boxses iframe {
-        width: 80%;
+        width: 52%;
     }
 }

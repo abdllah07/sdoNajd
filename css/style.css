@@ -82,7 +82,8 @@ section {
     border-radius: 50px;
 }
 .main-title-link:last-child{
-    background-color: var(--bron-color);
+    background-color: var(--back-btn);
+
     color:var(--home-color);
 }
 .main-title-link:last-child:hover{

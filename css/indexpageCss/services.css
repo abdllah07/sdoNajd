@@ -135,7 +135,7 @@
     font-size: 20px;
     position: relative;
     padding: 10px 50px ;
-    background-color: var(--bron-color);
+    background-color: var(--back-btn);
 
 }
 .serv-btn a::after{

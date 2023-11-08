@@ -42,7 +42,7 @@
 .row #about-right .text i {
     margin-left: 20px;
     font-size: 20px;
-    color:var(--bron-color);
+    color:var(--back-btn);
     transition: all 0.5s ease;
 }
 .row #about-right .text:hover i {
