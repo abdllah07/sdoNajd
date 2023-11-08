@@ -53,10 +53,9 @@ overflow: hidden;
     transform: scale(1.4);
 }
 
-.owl-carousel .owl-stage-outer {
-    height: 30vh;
+.owl-carousel .owl-stage {
+    height:100%;
 }
-
 .projects .project-boxses a h2{
     position: absolute;
     left: 0;

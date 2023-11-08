@@ -104,7 +104,7 @@
 
 .owl-carousel.owl-drag .owl-item { 
     width: 370px!important;
-    
+    height: 10vh;
 }
 
 .services .owl-carousel .owl-stage-outer {
