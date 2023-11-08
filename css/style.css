@@ -243,6 +243,17 @@ section {
     color: var(--bron-color);
     background-color: var(--home-color);
 }
+#back-to-top1{
+    position: fixed;
+    bottom: 20px;
+    right: -20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
+    color: var(--bron-color);
+    background-color: var(--home-color);
+}
 .btn-back-to-top:hover{
     color: var(--bron-color);
 }
@@ -253,7 +264,7 @@ section {
 }
 @media (max-width: 500px){
     .hidden-sm {
-        display: inline!important;
+        display: inline;
     }
 }
 /* =========================================
