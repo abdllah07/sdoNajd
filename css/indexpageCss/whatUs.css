@@ -248,3 +248,10 @@
     background-size: cover;
 
 }
+
+
+@media (max-width: 500px){
+    #about-02{
+        height: 72vh;
+    }
+}
