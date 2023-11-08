@@ -35,6 +35,16 @@
     .services .title .title-info{
         width: 80%;
     }
+
+}
+@media (max-width: 500px){
+
+    .owl-carousel.owl-drag .owl-item {
+        width:348px!important;
+    }
+}
+.owl-carousel.owl-drag .owl-item {
+    width:408px!important;
 }
 
 
@@ -48,12 +58,14 @@
     margin-top: 50px;
     transition: all 0.5s ease;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    width: 300px;
 }
 .services .services-boxses a .box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 380px;
+
 }
 .services .services-boxses a  .head  {
     text-align: center;
@@ -102,13 +114,9 @@
     width: 30px;
 }
 
-.owl-carousel.owl-drag .owl-item { 
-    width: 370px!important;
-    height: 10vh;
-}
 
-.services .owl-carousel .owl-stage-outer {
-    height: 50vh;
+.owl-carousel .owl-stage-outer {
+    height: 55vh;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
