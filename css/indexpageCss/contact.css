@@ -98,3 +98,14 @@
         width: 52%;
     }
 }
+
+@media(max-width: 500px){
+
+    .contact-boxses .con-box {
+        width: 90%;
+        
+    }
+    .contact-boxses iframe {
+        width: 90%;
+    }
+}
