@@ -246,7 +246,16 @@ section {
 .btn-back-to-top:hover{
     color: var(--bron-color);
 }
-
+@media (min-width: 768px) and (max-width: 991px){
+    .hidden-sm {
+        display: inline!important;
+    }
+}
+@media (max-width: 500px){
+    .hidden-sm {
+        display: inline!important;
+    }
+}
 /* =========================================
                 Arrow Down
 ============================================ */
