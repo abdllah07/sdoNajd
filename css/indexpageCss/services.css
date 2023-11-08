@@ -115,9 +115,7 @@
 }
 
 
-.owl-carousel .owl-stage-outer {
-    height: 55vh;
-}
+
 
 .owl-theme .owl-nav [class*=owl-] {
     color:var(--bron-color);

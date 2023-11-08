@@ -53,9 +53,16 @@ overflow: hidden;
     transform: scale(1.4);
 }
 
-.owl-carousel .owl-stage {
-    height: 100%;
+@media (max-width:7680px){
+    .owl-carousel .owl-stage-outer{
+        height: 70vh;
+    }
+    .owl-carousel .owl-stage {
+        height: 70vh;
+
+    }
 }
+
 .projects .project-boxses a h2{
     position: absolute;
     left: 0;
