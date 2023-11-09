@@ -11,7 +11,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 
@@ -21,14 +21,12 @@
 }
 
 .projects .box {
-    width: 30%;
+    width: 50%;
     padding: 15px;
     background-color: white;
-    margin-bottom: 100px;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-
 }
 
 
@@ -43,8 +41,9 @@
 .projects .box h5{
     position: absolute;
     bottom: 10px;
-    left: 40%;
+    left: 35%;
     color: var(--bron-color);
+    font-size: 30px;
 }
 
 .projects .box img:hover{
