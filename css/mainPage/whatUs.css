@@ -41,12 +41,12 @@
     content: '';
     display: block;
     position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 15%;
-    height: 95%;
+    left: 17px;
+    top: 27px;
+    width: 14%;
+    height: 53%;
     opacity: 1;
-    background-image: url("../../img/arch/vision-btn.png");
+    background-image: url(../../img/arch/logo-solid-small.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -123,6 +123,40 @@
     color: var(--home-color);
 }
 
+.vis-btn.active .vision h2 , 
+.vis-btn.active .vision p  {
+    color: var(--bron-color);
+}
+.vis-btn:hover .vision div h2 , 
+.vis-btn:hover .vision div p ,
+.vis-btn:hover .vision div i {
+    color: var(--bron-color);
+}
+.vis-btn.active .vision {
+    background-color: var(--bron-color);
+    border-radius: 50px;
+}
+.vis-btn.active .vision div i ,
+.vis-btn.active .vision div h2,
+.vis-btn.active .vision div p {
+    color: #fff;
+
+}
+.vis-btn.active::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 17px;
+    top: 27px;
+    width: 14%;
+    height: 53%;
+    opacity: 1;
+    background-image: url(../../img/arch/logo-solid-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+} 
 
 
 /* left about 2  */
@@ -202,18 +236,37 @@
     content: '';
     display: block;
     position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 15%;
-    height: 95%;
-    opacity: 0.7;
-    background-image: url("../../img/arch/vision-btn.png");
+    left: 7px;
+    top: 13px;
+    width: 12%;
+    height: 74%;
+    opacity: 1;
+    background-image: url(../../img/arch/logo-solid-small.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+#home-bg-video {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
 
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
 
 .what-us .vision-left p , 
 .what-us .vision-left h2,

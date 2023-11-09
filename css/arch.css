@@ -196,10 +196,7 @@ margin-bottom: 20px;
 
 
 
-
-
-
-/*  */
+*  */
 
 
 
@@ -211,40 +208,6 @@ margin-bottom: 20px;
 
 
 
-.vis-btn.active .vision h2 , 
-.vis-btn.active .vision p  {
-    color: var(--bron-color);
-}
-.vis-btn:hover .vision div h2 , 
-.vis-btn:hover .vision div p ,
-.vis-btn:hover .vision div i {
-    color: var(--bron-color);
-}
-.vis-btn.active .vision {
-    background-color: var(--bron-color);
-    border-radius: 50px;
-}
-.vis-btn.active .vision div i ,
-.vis-btn.active .vision div h2,
-.vis-btn.active .vision div p {
-    color: #fff;
-
-}
-.vis-btn.active::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 15%;
-    height: 95%;
-    opacity: 1;
-    background-image: url("../img/arch/vision-btn.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-} 
 
 
 
