@@ -53,13 +53,14 @@ align-items: center;
     transform:  scale(1.5);
 }
 .projects .project-boxses .box h2{
-position: absolute;
-bottom: 0;
-left: 44%;
-font-size: 30px;
-font-weight: bold;
-color: var(--bron-color);
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--bron-color);
+    font-family: math;
+    text-transform: uppercase;
 }
 @media (max-width:1200px){
     .projects .project-boxses .box img{

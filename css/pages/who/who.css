@@ -1,0 +1,51 @@
+:root {
+  --home-color: rgb(3, 27, 63);
+  --bron-color: rgba(168, 134, 111);
+  --bron-white: rgba(237, 209, 188);
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.info .text .title {
+  text-align: end;
+  width: 100%;
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--home-color);
+  margin-bottom: 10px;
+}
+.info .image {
+  width: 30%;
+}
+.info .image img {
+  width: 100%;
+}
+
+.info .text {
+  width: 60%;
+  text-align: end;
+  margin-right: 10px;
+}
+
+@media (max-width: 925px) {
+  .info {
+    margin: 0;
+  }
+  .info .image {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .info .text {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
