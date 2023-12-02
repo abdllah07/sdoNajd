@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Graphik Arabic';
-    src: local('Graphik Arabic Medium'), local('Graphik-Arabic-Medium'),
-        url('GraphikArabic-Medium.woff2') format('woff2'),
-        url('GraphikArabic-Medium.woff') format('woff'),
-        url('GraphikArabic-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
